@@ -3,8 +3,8 @@ import { LightningElement, api  } from 'lwc';
 export default class Numerator extends LightningElement {
     //@api counter = 0;
     _currentCount = 0;
-    priorCount = 0
-
+    priorCount = 0;
+    b=5;
     @api
     get counter(){
       return this._currentCount;
@@ -24,8 +24,17 @@ export default class Numerator extends LightningElement {
         const factor = event.detail;
         this.counter *= factor;
     }
+    debugger;
     @api
-    maximizeCounter(){
-      this.counter += 1000000;
+    maximizeCounter(a){
+      this.counter += a;
+      this.addExample(b);
+    }
+    
+    addExample({alpha: b}){
+      this.b += alpha;
+      console.log('Hello');
+      console.log(b);
+      
     }
 }
