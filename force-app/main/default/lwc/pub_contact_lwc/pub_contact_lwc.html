@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title = 'LMSPUblisherWebComponent' icon-name="custom:custom30">
+        <div class="slds-m-around_medium" oncontactselect = {handleContactSelect}>
+            <template if:true={contactList}>
+                <template for:each={contactList} for:item="contact">
+                    <c-contact-list-item-bubbling
+                    key = {contact.id}
+                    contact = {contact}>
+                </c-contact-list-item-bubbling>
+
+                </template>
+            </template>
+        </div>
+    </lightning-card>
+</template>

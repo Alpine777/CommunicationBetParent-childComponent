@@ -1,0 +1,27 @@
+<template>
+    <lightning-card 
+    title="LMSSubscriberWebComponent"
+    icon-name="custom:custom30">
+    <div class="slds-m-around_medium">
+        <lightning-record-form
+                    record-id={contactId}
+                    object-api-name={objectApiName}
+                    fields={fields}
+                    columns="2"
+                    mode="view">
+            </lightning-record-form>
+        <p>
+            {Name}
+        </p>
+        <p>
+            {Title}
+        </p>
+        <p>
+            <lightning-formatted-phone value={Phone}></lightning-formatted-phone>
+        </p>
+        <p>
+            <lightning-formatted-phone value={Email}></lightning-formatted-phone>
+        </p>
+    </div>
+    </lightning-card>
+</template>
