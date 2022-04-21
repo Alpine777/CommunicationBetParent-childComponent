@@ -26,15 +26,10 @@ export default class Numerator extends LightningElement {
     }
     debugger;
     @api
-    maximizeCounter(a){
-      this.counter += a;
-      this.addExample(b);
+    maximizeCounter(alpha){
+      this.counter += alpha;
+   
     }
     
-    addExample({alpha: b}){
-      this.b += alpha;
-      console.log('Hello');
-      console.log(b);
-      
-    }
+
 }
